@@ -65,6 +65,14 @@ def add1(x, sortedList):
          print(y, end=" "),
 
 #add1(10, sortedList)
+         
+def clone(sortedList, *num):
+    sortedList = num[:]
+    for c in sortedList:
+        print(c, end=" ")
+    return sortedList
+
+print(clone(1,2))
 
 # ##add to list with built in methods
 
@@ -78,16 +86,22 @@ def appendx(x):
 # #add items to list using extend([])
 def extendY(*args):
     sortedList.extend([*args])
+    print("\n___extend____\n")
     for y in sortedList: 
         print( y, end=" ")
-extendY(10,7,6,8,9)
+#extendY(10,7,6,8,9)
 
 
 
 #add at x or y location in list
 
-def add_at:
-    pass
+def insert_at():
+    sortedList.insert(0,-123)
+    sortedList.insert(len(sortedList),103)  #equivalent to append
+    for y in sortedList: 
+        print( y, end=" ")
+
+insert_at()
 
 # # #prepend items to array
 # def prepend():
